@@ -12,7 +12,7 @@ const cardColour = cards.map((element) => element.colour);
 const cardValue = cards.map((element) => element.value);
 const cardSymbol = cards.map((element) => element.symbol);
 
-// Create a card
+// Create card
 
 const createCardBlack = (suit, value, symbol) => {
   let htmlCardBlack = `
@@ -65,3 +65,15 @@ const cardBlack = (black) => {
     return cardColourRed;
   }
 };
+
+const handleHeartsButton = (event) => {
+  if (cardSuit === "hearts") {
+    cardContainer.innerHTML.includes("hearts");
+  }
+};
+
+heartsButton.addEventListener("click", handleHeartsButton);
+
+const handleAllCardsButton = (event) => {};
+
+allCardsButton.addEventListener("click", handleAllCardsButton);
